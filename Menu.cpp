@@ -9,16 +9,12 @@
 #include <conio.h>
 #include <map>
 #include <vector>
+#include <stdlib.h>	
+#include <locale.h> 
 using namespace std;
 
 #define MAX 80
-
 char linea[MAX];
-int leercadena(char *cad, int n) {
-  cin.getline(cad, n); // Utiliza getline para leer toda la línea
-  return cin.good(); // Indica si la lectura fue exitosa
-}
-
 
 struct Cliente {
     string cedula;
@@ -181,27 +177,26 @@ void titulo (string title)
 
 int leercadena(char *cad, int n)
 {
-	int m, c;
+	int i, c;
 	c = getchar();
 	if (c == EOF) {
 		cad[0] = '\0';
 		return 0;
 	}
 	if (c == '\n') {
-		m = 0;
+		i = 0;
 	} else {
 		cad[0] = c;
-		m = 1;
+		i = 1;
 	}
-	for (; m < n - 1 && (c = getchar()) != EOF && c != '\n'; m++) {
-		cad[m] = c;
+	for (; i < n - 1 && (c = getchar()) != EOF && c != '\n'; i++) {
+		cad[i] = c;
 	}
-	cad[m] = '\0';
+	cad[i] = '\0';
 	if (c != '\n' && c != EOF) 
 		while ((c = getchar()) != '\n' && c != EOF);
 	return 1;
 }
-
 
 
 
