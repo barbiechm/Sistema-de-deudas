@@ -16,8 +16,7 @@ using namespace std;
 #define MAX 80
 char linea[MAX];
 
-
-
+/* SOLO ESTOY PROBANDO XD */
 
 struct Cliente {
     string cedula;
