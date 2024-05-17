@@ -143,36 +143,43 @@ void titulo (string title)
     int i;
     int val;
     val = title.length();
-    val = val + 20;
+    val = val + 40;
     for(i=0; i <= val; i++)
     {
-        cout <<"-";
+        cout <<"=";
     }
     cout << "\n \n";
          for (i = 0; i <= val; i++) {
         espacio(2); // Imprime 5 espacios
         if (i == 5) {
             cout << title << "\n\n\n";
+
+        for(i=0; i <= val; i++)
+            {
+            cout <<"=";
+            }
+            cout <<"\n\n\n";
+
             espacio(5);
-            cout << "1 - Agregar Cliente. \n\n";
+            cout << "(1) ==> [Agregar Cliente] \n\n";
             espacio(5);
-            cout << "2 - Eliminar Cliente. \n\n";
+            cout << "(2) ==> [Eliminar Cliente] \n\n";
             espacio(5);
-            cout << "3 - Anadir deuda a cliente. \n\n";
+            cout << "(3) ==> [Anadir deuda a cliente] \n\n";
             espacio(5);
-            cout << "4 - Pagar deuda de cliente. \n\n";
+            cout << "(4) ==> [Pagar deuda de cliente] \n\n";
             espacio(5);
-            cout << "5 - Mostrar Lista de clientes. \n\n";
+            cout << "(5) ==> [Mostrar Lista de clientes] \n\n";
             espacio(5);
-            cout << "6 - Mostrar deudas de clientes. \n\n";
+            cout << "(6) ==> [Mostrar deudas de cliente] \n\n";
             espacio(5);
-            cout << "7 - Salida. \n\n";
+            cout << "(7) ==> [Salida] \n\n";
         }
     }
     cout << "\n \n";
         for(i=0; i <= val; i++)
     {
-        cout <<"-";
+        cout <<"=";
     }
     cout << "\n \n";
 };
@@ -211,10 +218,11 @@ int leercadena(char *cad, int n)
 
 main()
 {
+    system("color 80");
 	int desi;
 	    do {
 		system("cls");
-        titulo(" LISTADO DE OPCIONES ");
+        titulo(" Menu ");
         leercadena(linea, MAX);
 		sscanf(linea, "%d", &desi);
 
