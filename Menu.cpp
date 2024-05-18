@@ -218,7 +218,7 @@ int leercadena(char *cad, int n)
 
 main()
 {
-    system("color 80");
+    system("color 81");
 	int desi;
 	    do {
 		system("cls");
