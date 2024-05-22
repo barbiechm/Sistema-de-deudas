@@ -4,18 +4,18 @@
 #define CLEAR "clear"
 #endif
 
-#include <stdio.h>	
-#include <string.h>
-#include <string>
-#include <stdlib.h>	
-#include <locale.h> 
-#include <cmath>
-#include <cctype>
-#include <algorithm>
-#include <sstream>
-#include <iostream>
-#include <fstream>
-#include <limits>
+#include <stdio.h> /* Gestiona entrada/salida de datos estándar. */
+#include <string.h> /* Funciones para cadenas de caracteres C. */
+#include <string> /* Clase de cadena de caracteres en C++. */
+#include <stdlib.h> /* Funciones de utilidad general, memoria, conversiones. */
+#include <locale.h> /* Configuración regional, formateo según idioma/ubicación. */
+#include <cmath> /* Funciones matemáticas avanzadas, exponenciales, logaritmos. */
+#include <cctype> /* Funciones para probar tipos de caracteres y conversión. */
+#include <algorithm> /* Algoritmos para operaciones comunes, ordenamiento, búsqueda. */
+#include <sstream> /* Flujo de entrada/salida para cadenas de texto. */
+#include <iostream> /* Entrada/salida de flujo para consola/archivos. */
+#include <fstream> /* Lectura/escritura de datos en archivos. */
+#include <limits> /* Límites y propiedades de tipos de datos. */
 using namespace std;
  
 #define MAX 80
