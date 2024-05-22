@@ -71,6 +71,7 @@ char linea[MAX];
  
 int main()
 {
+	system("color 71");
 	menuPrincipal();
  
 	return 0;
